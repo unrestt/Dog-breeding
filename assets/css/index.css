@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-dark-grey: #1B1B1B;
+    --color-background-1: #ffffff;
+    --color-background-2: #f7f6f6;
+    --color-white: #fff;
+    --color-white-hover: #ccc;
+    --color-black: #000;
+    --shadow: 3px 3px 9px black;
+    --shadow-lower: 1px 3px 5px black;
+    --color-light-grey: #888888;
+    --color-blue: #4569b1;
+    --color-dark-blue: #2546aa;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat";
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    height: 100vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.light{
+    background-color: var(--color-background-1);
+}
+.dark{
+    background-color: var(--color-background-2);
+}
+section{
+    display: flex;
+}
+
+i, p, h1, h2{
+    color: #fff;
+}
+
+.header-main{
+    user-select: none;
+    margin-bottom: 20px;
+}
+.header-main h1{
+    font-size: 40px;
+    color: var(--color-blue);
+}
+
+.to-top {
+    background-color: var(--color-white);
+    z-index: 10000;
+    position: fixed;
+    bottom: 16px;
+    right: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    box-shadow: var(--shadow-lower);
+  }
+  .to-top.active{
+    bottom: 18px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .to-top:hover{
+    background-color: var(--color-white-hover);
+  }
+  .to-top i{
+    color: var(--color-black);
+  }
+
+
+
+  .sections {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+@media (max-width: 1024px) {
+    .sections {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sections {
+        padding: 0 30px;
+    }
+}
+
+
+

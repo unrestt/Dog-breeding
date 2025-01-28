@@ -1,0 +1,38 @@
+header{
+    background-color: var(--color-blue);
+    height: 55px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-mid{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    font-size: 16px;
+}
+.header-mid span{
+    font-weight: bold;
+}
+.header-right{
+    display: flex;
+    font-size: 30px;
+    margin-right: 20px;
+    gap: 15px;
+}
+.header-right i{
+    cursor: pointer;
+    transition: 0.3s color;
+}
+.header-right i:hover{
+    color: #ccc;
+}
+@media (max-width: 600px){
+    .header-mid{
+        left: 1%;
+        margin-left: 120px;
+        font-size: 15px;
+    }
+}

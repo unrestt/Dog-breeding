@@ -1,0 +1,123 @@
+#about-breed-section {
+    padding: 80px 0;
+    user-select: none;
+}
+
+.about-breed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.breed-look {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+.breed-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-breed-container p {
+    color: var(--color-black);
+    line-height: 1.5;
+}
+
+.first-breed-text {
+    font-size: 18px;
+}
+
+.about-breed-container span {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--color-blue);
+}
+
+.look {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.look i {
+    font-size: 50px;
+    color: var(--color-blue);
+}
+
+.below-breed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-below-breed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+.mid-below-breed img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.about-breed-container button {
+    padding: 20px 40px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 17px;
+    transition: 0.3s background-color;
+    width: 350px;
+    align-self: center;
+}
+
+.about-breed-container button:hover {
+    background-color: var(--color-dark-blue);
+}
+
+.right-look {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .about-breed-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .breed-look {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .mid-below-breed {
+        flex: 1 1 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .mid-below-breed img {
+        max-width: 100%;
+    }
+}
